@@ -3,21 +3,21 @@ package com.lenovo.simplemail;
 public class MailSenderFactory {
 
 	/**
-	 * ·şÎñÓÊÏä
+	 * Â·Ã¾ÃÃ±Ã“ÃŠÃÃ¤
 	 */
 	private static SimpleMailSender serviceSms = null;
 
 	/**
-	 * »ñÈ¡ÓÊÏä
+	 * Â»Ã±ÃˆÂ¡Ã“ÃŠÃÃ¤
 	 * 
 	 * @param type
-	 *            ÓÊÏäÀàĞÍ
-	 * @return ·ûºÏÀàĞÍµÄÓÊÏä
+	 *            Ã“ÃŠÃÃ¤Ã€Ã ÃÃ
+	 * @return Â·Ã»ÂºÃÃ€Ã ÃÃÂµÃ„Ã“ÃŠÃÃ¤
 	 */
 	public static SimpleMailSender getSender(MailSenderType type) {
 		if (type == MailSenderType.SERVICE) {
 			if (serviceSms == null) {
-				serviceSms = new SimpleMailSender("664281688@qq.com", "850663zzzjmf");
+				serviceSms = new SimpleMailSender("è‡ªå·±çš„é‚®ç®±", "è‡ªå·±çš„é‚®ç®±å¯†ç ");
 			}
 			return serviceSms;
 		}
